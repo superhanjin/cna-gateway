@@ -15,7 +15,7 @@ spring:
         - id: delivery
           uri: http://localhost:8082
           predicates:
-            - Path=/deliveries/**/cancellations/** 
+            - Path=/deliveries/**,/cancellations/**
       globalcors:
         corsConfigurations:
           '[/**]':
@@ -42,7 +42,7 @@ spring:
         - id: delivery
           uri: http://delivery:8080
           predicates:
-            - Path=/deliveries/**/cancellations/** 
+            - Path=/deliveries/**,/cancellations/**
       globalcors:
         corsConfigurations:
           '[/**]':
